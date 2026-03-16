@@ -1,8 +1,0 @@
-{
-  "build": {
-    "builder": "NIXPACKS"
-  },
-  "deploy": {
-    "startCommand": "pip install -e . && python -c \"import paste.deploy.loadwsgi as m, inspect, re; src=open(m.__file__).read(); fixed=src.replace('possible.append((entry.load(), protocol, entry.name))', 'import importlib as _il, sys as _s; _mn,_at=entry.value.split(\\\":\\\"); [_s.path.insert(0,p) for p in [\\\".\\\"] if p not in _s.path]; _mod=_il.import_module(_mn); possible.append((getattr(_mod,_at), protocol, entry.name))'); open(m.__file__,'w').write(fixed)\" && pserve development.ini"
-  }
-}
