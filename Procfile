@@ -1,1 +1,1 @@
-web: pip install -e . && pserve development.ini
+web: pserve development.ini http_port=$PORT
