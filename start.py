@@ -1,3 +1,4 @@
+print("=== INICIANDO START.PY ===")
 import os
 import configparser
 from waitress import serve
