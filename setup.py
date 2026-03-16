@@ -21,6 +21,7 @@ requires = [
     'zope.sqlalchemy',
     'waitress',
     'psycopg2',
+    'psycopg2-binary',
 ]
 
 tests_require = [
