@@ -10,4 +10,3 @@ app = main({}, **settings)
 port = int(os.environ.get('PORT', 6543))
 print(f'Serving on port {port}')
 serve(app, host='0.0.0.0', port=port)
-```
