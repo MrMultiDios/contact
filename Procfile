@@ -1,1 +1,1 @@
-web: pserve development.ini
+web: pip install -e . && pserve development.ini
