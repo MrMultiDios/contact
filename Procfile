@@ -1,1 +1,1 @@
-web: pserve development.ini http_port=$PORT
+web: pip install -e . && waitress-serve --port=$PORT --call contact:main
