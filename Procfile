@@ -1,1 +1,1 @@
-web: pip install -e . && python -c "from waitress import serve; from contact import main; import configparser; c=configparser.ConfigParser(); c.read('development.ini'); s=dict(c['app:main']); app=main({}, **s); serve(app, host='0.0.0.0', port=int(__import__('os').environ.get('PORT', 6543)))"
+web: pip install -e . && python start.py
